@@ -1,7 +1,7 @@
 # Ahorcado.github.io
 challengeonejuegoahorcado3
 
- <a href="Ahorcado.github.io" target="_blank"> Test Del Ahorcado </a>
+ <a href="https://lauta9.github.io/Ahorcado.github.io/juego.html" target="_blank"> Test Del Ahorcado </a>
   
 
 
