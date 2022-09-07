@@ -408,6 +408,10 @@ footer{
     
 }
 
+.teclas{
+    display: block;
+}
+
 canvas{
     width: 100%;
     left: 0%;
@@ -551,6 +555,10 @@ canvas{
 
     .boton-guardar,.boton-cancelar{
         width: 49%;
+    }
+
+    .teclas{
+        display: block;
     }
 
     footer{
