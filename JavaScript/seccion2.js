@@ -4,11 +4,12 @@ var seccion3 = document.querySelector(".seccion3");
 let botonNuevo = document.querySelector(".btn-iniciar")
 let botonNueva = document.querySelector(".btn-nueva")
 let botonGuardar = document.querySelector(".boton-guardar")
-
+let botonCancelar = document.querySelector(".boton-cancelar")
 
 botonNuevo.onclick = juegoDirecto;
 botonNueva.onclick = botonesFuera;
 botonGuardar.onclick = validar;
+botonCancelar.onclick = cancelar;
 
 
 var listaLetras = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N",
@@ -23,6 +24,11 @@ var listaLetras = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N",
          seccion2.classList.add("ocultar")
          seccion3.classList.remove("ocultar");
         }
+
+    function cancelar(){
+        seccion2.classList.add("ocultar")
+        seccion1.classList.remove("ocultar")
+    }
                 
     function juegoDirecto(){
     seccion1.classList.add("ocultar")
