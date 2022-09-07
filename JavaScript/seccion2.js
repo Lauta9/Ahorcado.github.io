@@ -60,6 +60,18 @@ var listaLetras = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N",
                 return;
             }
         } 
+
+        if(entrada.value.length  >= 9){
+            Swal.fire({
+                position: 'center',
+                icon: 'error',
+                title: 'Un momento! El maximo permitido es 8 letras',
+                showConfirmButton: true,
+              })
+            limpiarTexto()
+            return;
+        }
+
     
         if(!listaPalabras.includes(entrada.value.toUpperCase())){
             agregarPalabranueva(entrada.value.toUpperCase());
