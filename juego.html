@@ -1,0 +1,126 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet"> 
+</head>
+
+
+<header>
+    <a href="juego.html"><img class="logo" src="Img/Logo.ico" alt="Logo Alura"></a>
+</header>
+
+
+<body>
+    <section class="seccion1">
+        <div class="buttons">
+        <input type="button" class="btn-iniciar boton" value="Iniciar Juego">
+        <input type="button"  class="btn-nueva boton" value="Agregar nueva palabra">
+        </div>
+
+    </section>
+
+    <section class="seccion2 ocultar">
+        <input maxlength="8" type="text" id="area" class="textarea palabra" placeholder="Ingrese una palabra" >
+        <div class="botones">
+        <div class="avisos">
+            <img class="aviso" src="img/Vectoraviso (1).png" alt="aviso">
+            <p class="parrafo-aviso">Máx. de 8 letras</p>
+        </div>
+        <input type="button" class="boton-guardar boton" value="Guardar y empezar">
+        <input type="button" class="boton-cancelar boton" value="Cancelar">
+      </div>
+    </section>
+
+    <section class="seccion3 ocultar">
+        
+        
+
+        <div class="contenedor-canvas">
+        <canvas id="canvas"></canvas>
+        </div>
+
+        
+
+        <div class="contenedor-letras-bien">
+        </div>
+
+        <div class="contenedor-letras-mal">
+        </div>
+        
+        <div class="teclas ocultar">
+            <img src="Img/teclado.png" alt="teclado en pantalla" class="teclado">
+            <div class="teclado-pantalla ocultar">
+                <div class="primer-fila">
+                    <div class="key">Q</div>
+                    <div class="key">W</div>
+                    <div class="key">E</div>
+                    <div class="key">R</div>
+                    <div class="key">T</div>
+                    <div class="key">Y</div>
+                    <div class="key">U</div>
+                    <div class="key">I</div>
+                    <div class="key">O</div>
+                    <div class="key">P</div>
+                </div>
+                
+                <div class="segunda-fila">
+                    <div class="key">A</div>
+                    <div class="key">S</div>
+                    <div class="key">D</div>
+                    <div class="key">F</div>
+                    <div class="key">G</div>
+                    <div class="key">H</div>
+                    <div class="key">J</div>
+                    <div class="key">K</div>
+                    <div class="key">L</div>
+                    <div class="key">Ñ</div>
+                </div>
+
+                <div class="tercer-fila">
+                    <div class="key">Z</div>
+                    <div class="key">X</div>
+                    <div class="key">C</div>
+                    <div class="key">V</div>
+                    <div class="key">B</div>
+                    <div class="key">N</div>
+                    <div class="key">M</div>
+                </div>
+            </div>
+
+        </div>
+        
+        
+        
+
+        <div class="contenedor-btn">
+            <div class="botons">
+                <input type="button" id="btn-njuego" class="btn-njuego boton" value="Nuevo juego">
+                <input type="button" id="reset" class="btn-rendirse boton" value="Rendirse">
+            </div>
+        </div>
+        
+
+    </section>
+
+    <footer>
+        <p> Hecho por Lautaro Morales ©</p>
+    </footer>
+    
+    <script src="JavaScript/funcionesAhorcado.js"></script>
+    <script src="JavaScript/ahorcadoCanvas.js"></script>
+    <script src="JavaScript/palabras.js"></script>
+    <script src="JavaScript/seccion2.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+
+
+</body>
+</html>

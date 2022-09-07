@@ -1,0 +1,647 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+}
+
+.boton:hover{
+
+    cursor: pointer;
+}
+
+body{
+    background: #E5E5E5;
+}
+
+
+
+header{
+    width: 100%;
+    height: 60px;
+    
+}
+
+.logo{
+    margin-left: -30px;
+    margin-top: 2px;
+}
+
+main{
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.seccion1{
+    width: 100%;
+}
+
+.buttons{
+    display: block;
+    flex-direction: column;
+}
+
+.btn-iniciar{
+    background: #0A3871;
+    border-radius: 24px;
+    color: white;
+    border: 1px solid;
+    border-color: #0A3871;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    width: 317px;
+    height: 104px;
+}
+
+.btn-nueva{
+    background: #D8DFE8;
+    border: 1px solid;
+    border-color: #0A3871;
+    color: #0A3871;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    border-radius: 24px;
+    width: 280px;
+    height: 67px;
+}
+
+.btn-iniciar, .btn-nueva, .seccion1{
+    display: block;
+    padding: auto;
+    margin: auto;
+    flex-direction: row;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+
+.seccion2{
+    width: 100%;
+}
+
+.textarea{
+    width: 50%;
+    height: 40%;
+    display: block;
+    margin: auto;
+    margin-top: 23px;
+    resize: none;
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
+    background: transparent;
+    border: none;
+    color: #0A3871;
+    outline: none;
+    display: flex;
+    margin-left: 32%;
+    box-sizing: border-box;
+    overflow: hidden;
+    align-items: center;
+}
+
+::placeholder{
+    color: #0A3871;
+    background: transparent;
+}
+
+.botones{
+    text-align: center;
+    margin-top: 200px;
+    
+}
+
+
+.avisos{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+.aviso{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-bottom: 2px;
+}
+
+.aviso-img, .parrafo-aviso{
+    display: flex;
+    justify-content: center;
+    padding-right: 28.5%;
+    align-items: center;
+    }
+
+    .parrafo-aviso{
+        padding-left: 5px;
+        color: rgba(73, 80, 87, 1);
+        font-size: 17px;
+    }
+
+
+.boton-guardar{
+    background: #0A3871;
+    border-radius: 24px;
+    color: white;
+    border: 1px solid;
+    border-color: #0A3871;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+}
+
+.boton-cancelar{
+    background: #D8DFE8;
+    border: 1px solid;
+    border-color: #0A3871;
+    color: #0A3871;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    border-radius: 24px;
+}
+
+
+.boton-cancelar, .boton-guardar{
+    width: 340px;
+    height: 55px;
+   
+}
+
+
+.seccion3{
+    width: 100%;
+}
+
+canvas{
+    position: relative;
+    width: 350px;
+    height: 300px;
+    left: 39%;
+}
+
+canvas, .botons{
+    align-items: center;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+.contenedor-letras-bien{
+    font-size: 35px;
+    min-height: 2rem;
+    text-align: center;
+    display: inline-block;
+    vertical-align: bottom;
+    width: 100%;
+    margin: 25px 0 ;
+    
+}
+
+.letra-bien{
+    width: 48px;
+    height: 2.5rem;
+    display: inline-block;
+    border-bottom: 4px solid #0A3871;
+    vertical-align: top;
+    color: #0a3871;
+    margin: 0 5px;
+}
+
+.contenedor-letras-mal{
+    font-size: 27px;
+    color: #0a3871;
+    text-align: center;
+    box-sizing: border-box;
+    vertical-align: bottom;
+    margin: 10px;
+    
+}
+
+.letras-mal{
+
+    font-size: 27px;
+    display: inline-block;
+    color: #495057;
+    margin: 0 4px;
+
+}
+
+.teclas{
+    display: block;
+    text-align: center;
+}
+
+.teclado-pantalla{
+    display: flex;
+    width: 300px;
+    margin: 0 auto;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #E5E5E5;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.key{
+    width: 15px;
+    display: inline-block;
+    color: #0A3871;
+    margin: 3px;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+.key:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    color: #0A3871;
+    text-shadow: 1px 1px 1px #fff;
+}
+.key:active{
+    filter: contrast(2);
+}
+
+.teclado{
+    width: 70px;
+    height: 50px;
+}
+.teclado:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    color: #0a3871;
+}
+
+
+
+
+
+.contendor-btn, .botons{
+    margin: auto;
+    width: 100%;
+
+}
+
+
+.btn-njuego{
+    background: #0A3871;
+    border-radius: 24px;
+    color: white;
+    border: 1px solid;
+    border-color: #0A3871;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+}
+.btn-rendirse{
+    background: #f7f7f7;
+    border: 1px solid;
+    border-color: #0A3871;
+    color: #0A3871;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    border-radius: 24px;
+}
+
+.btn-njuego,.btn-rendirse{
+    width: 300px;
+    height: 55px;
+    margin-right: 10px;
+  
+}
+
+
+
+.letra{
+    margin-top: 310%;
+    width: 20%;
+    height: 4%;
+    }
+    
+footer{
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: #0A3871;
+    padding: 1em 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+.ocultar{
+    display: none;
+}
+
+
+
+@media screen and (min-width : 0px ) and (max-width : 360px ){
+   
+    
+
+    .seccion1, .buttons{
+        padding-top: 25%;
+        overflow: visible;
+    } 
+
+    .logo{
+        margin: 2 -35;
+    }
+
+    .textarea{
+        margin-left: auto;
+        margin-top: 0%;
+        width: 90%;
+        font-size: 1.3em;
+    }
+
+
+    .boton-guardar, .boton-cancelar{
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        width: 95%;
+        height: 7%;
+    }
+
+    .avisos{
+        margin-right: 23%;
+    }
+    
+    .avisos p{
+        font-size: 15px;
+        }
+
+    
+    .btn-iniciar{
+        width: 80%;
+        height: 13%;
+    }
+
+    .btn-nueva{
+        width: 67%;
+        height: 9%;
+        background: #E5E5E5;
+    }
+
+
+
+
+    footer{
+        display: none;
+
+    }
+
+        /*Desktop 3*/
+
+
+  .botons{
+    display: block;
+
+  }
+
+  .btn-njuego,.btn-rendirse{
+
+    margin: 15px auto;
+    
+}
+
+canvas{
+    width: 100%;
+    left: 0%;
+
+}
+
+
+}
+
+
+@media screen and (min-width : 360px ) and (max-width : 480px ){
+
+
+
+    .seccion1, .buttons{
+        padding-top: 30%;
+        overflow: visible;
+    }
+
+    .logo{
+        margin: 2 -35;
+    }
+    
+    .boton{
+       display: block;    
+    }
+
+    .btn-iniciar{
+        width: 80%;
+        height: 12%;
+    }
+
+    .btn-nueva{
+        width: 67%;
+        height: 9%;
+        background: #E5E5E5;
+    }
+
+ /* Destktop 2*/
+
+.textarea{
+    margin-left: auto;
+    margin-top: 0%;
+    width: 80%;
+}
+
+.avisos{
+    margin-right: 35%;
+}
+
+.avisos p{
+    font-size: 17px;
+    }
+
+.boton-guardar, .boton-cancelar{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    width: 93%;
+    height: 8.2%;
+}
+
+
+
+    footer{
+        display: none;
+
+    }
+
+    /*Desktop 3*/
+
+
+  .botons{
+    display: block;
+
+
+  }
+
+  .btn-njuego,.btn-rendirse{
+
+    margin: 15px auto;
+    
+}
+
+
+
+.teclas{
+    display: block;
+}
+
+
+canvas{
+    width: 100%;
+    left: 0%;
+    top: 7.4%;
+}
+
+
+}
+
+@media screen and (min-width : 480px ) and (max-width : 768px ){
+    
+
+
+
+    .seccion1, .buttons{
+        padding-top: 25%;
+        overflow: visible;
+    } 
+
+    .btn-iniciar, .btn-nueva{
+        margin-top: 22px;
+    }
+
+
+    .logo{
+        margin: 2 -35;
+    }
+
+    .textarea{
+        margin-left: auto;
+        margin-top: 0%;
+        width: 90%;
+        font-size: 2.5em;
+    }
+
+
+
+    .avisos{
+        position: relative;
+        margin-right: 65%;
+    }
+
+    .avisos p{
+        font-size: 1.2em;
+    }
+
+    .botones{
+        margin-top: 60%;
+    }
+
+    .boton-guardar,.boton-cancelar{
+        width: 49%;
+    }
+
+    footer{
+        display: none;
+    }
+
+        /*Desktop 3*/
+
+
+  .botons{
+    margin-top: 4%;
+  }
+
+  .btn-njuego,.btn-rendirse{
+
+    margin: 5px;
+    
+}
+
+
+canvas{
+    top: 5%;
+    width: 50%;
+    margin: 0 0 0 20%;
+    left: 0%;
+}
+
+}
+
+
+@media screen and (min-width : 770px ) and (max-width : 960px ){
+  
+
+    .botons{
+        display: block;
+        margin-top: 2%;
+      }
+    
+      .btn-njuego,.btn-rendirse{
+    
+        margin: 15px auto;
+        
+    }
+
+    .avisos{
+        margin-right: 43%;
+    }
+    
+    .avisos p{
+        font-size: 17px;
+        }
+
+
+    canvas{
+        width: 50%;
+        
+        left: 21.5%;    
+    }
+
+    
+  
+}
+
+
+@media screen and (min-width : 960px ) and (max-width : 1328px ){
+  
+
+    .botons{
+        display: block;
+      }
+    
+      .btn-njuego,.btn-rendirse{
+    
+        margin: 15px auto;
+        
+    }
+
+    .avisos{
+        margin-right: 35%;
+    }
+    
+    .avisos p{
+        font-size: 17px;
+        }
+
+
+    canvas{
+        width: 40%;
+        left: 30%;
+    
+    }
+
+  
+}
